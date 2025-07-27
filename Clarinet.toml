@@ -1,0 +1,148 @@
+[project]
+<<<<<<< HEAD
+<<<<<<< HEAD
+name = "greeting-app"
+description = "Simple greeting application"
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.greeting-app]
+path = "contracts/greeting-app.clar"
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
+
+[networks]
+[networks.simnet]
+name = "Simnet"
+deployment_dir = "deployments/default"
+
+[[networks.simnet.accounts]]
+name = "deployer"
+address = "ST1PQHQKV0RJXZFYVDGX8X4P9AS6K56WC5H6TPW"
+mnemonic = "sell invite acquire kitten bamboo drastic jelly vivid peace spawn twice guilt pave pen rubber pretty private cake remember right fragile fold ridge swap"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_1"
+address = "ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQKCY7A"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_2"
+address = "ST2CY5V39NHDPWSXMW3QDT3HKOFP5T8CJX6YACXR1"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_3"
+address = "ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_4"
+address = "ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG41ND"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_5"
+address = "ST2REHHS5J3CERCRBEPMGH6001G1E9YXWZDRMKKD3"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_6"
+address = "ST3AM1A857AKG2QJZQPEQBD8VCQR7ZSZR68TQ3KX"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_7"
+address = "ST3PF13W7Z0RRM42A8VZRVFQ75SVEGKQE6R8E5XW"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_8"
+address = "ST3NBRSFKX28FQ2ZJ1MAKX58HKHSHUGV4C3M5TKJR"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_9"
+address = "ST2KHF9RNN47ZWS8VEX2V1C3R2DP8MQJP1HDFMJE"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[[networks.simnet.accounts]]
+name = "wallet_10"
+address = "ST1X6M947Z7E58CNE0H8SJV4TVRPKK5RBPV4X4QK"
+mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+balance = 1000000000000000
+
+[devnet]
+disable_stacks_explorer = false
+disable_stacks_api = false
+working_dir = "devnet"
+use_docker = true
+deployment_dir = "deployments/devnet"
+disable_pox = false
+miner_mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+miner_derivation_path = "m/44'/5757'/0'/0/0"
+faucet_mnemonic = "shadow private easily thought say logic fault paddle word top book during ignore notable orange flight clock image wealth resist cotton elephant"
+faucet_derivation_path = "m/44'/5757'/0'/0/0"
+initial_balances = [
+  { address = "ST1PQHQKV0RJXZFYVDGX8X4P9AS6K56WC5H6TPW", amount = 1000000000000000 },
+  { address = "ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQKCY7A", amount = 1000000000000000 },
+  { address = "ST2CY5V39NHDPWSXMW3QDT3HKOFP5T8CJX6YACXR1", amount = 1000000000000000 },
+  { address = "ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC", amount = 1000000000000000 },
+  { address = "ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG41ND", amount = 1000000000000000 },
+  { address = "ST2REHHS5J3CERCRBEPMGH6001G1E9YXWZDRMKKD3", amount = 1000000000000000 },
+  { address = "ST3AM1A857AKG2QJZQPEQBD8VCQR7ZSZR68TQ3KX", amount = 1000000000000000 },
+  { address = "ST3PF13W7Z0RRM42A8VZRVFQ75SVEGKQE6R8E5XW", amount = 1000000000000000 },
+  { address = "ST3NBRSFKX28FQ2ZJ1MAKX58HKHSHUGV4C3M5TKJR", amount = 1000000000000000 },
+  { address = "ST2KHF9RNN47ZWS8VEX2V1C3R2DP8MQJP1HDFMJE", amount = 1000000000000000 },
+  { address = "ST1X6M947Z7E58CNE0H8SJV4TVRPKK5RBPV4X4QK", amount = 1000000000000000 }
+]
+=======
+=======
+>>>>>>> e9459fc5eababf2af0f6e86af11959712610d63c
+name = "counter"
+description = ""
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+
+# [contracts.counter]
+# path = "contracts/counter.clar"
+
+[repl.analysis]
+passes = ["check_checker"]
+check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
+
+# Check-checker settings:
+# trusted_sender: if true, inputs are trusted after tx_sender has been checked.
+# trusted_caller: if true, inputs are trusted after contract-caller has been checked.
+# callee_filter: if true, untrusted data may be passed into a private function without a
+# warning, if it gets checked inside. This check will also propagate up to the
+# caller.
+# More informations: https://www.hiro.so/blog/new-safety-checks-in-clarinet
+<<<<<<< HEAD
+>>>>>>> e9459fc5eababf2af0f6e86af11959712610d63c
+=======
+>>>>>>> e9459fc5eababf2af0f6e86af11959712610d63c
