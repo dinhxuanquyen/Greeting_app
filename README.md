@@ -22,7 +22,7 @@ The vision behind this project is to **demonstrate the capabilities of decentral
 
 * ✅ **Send Greetings:** Users can send personalized greeting messages to other wallet addresses.
 * 📧 **Email Registration:** Users can register their email addresses for future notifications.
-* 🎯 **Move Validation:** Ensures valid receiver addresses and message content validation.
+* 🎯 **Input Validation:** Ensures valid receiver addresses and message content validation.
 * 📝 **Message Storage:** All greetings are stored on-chain with sender, receiver, timestamp, and read status.
 * 🏆 **Read Status Tracking:** Automatically tracks which greetings have been read by recipients.
 * 💰 **No Transaction Fees:** Simple greeting messages without additional token transfers.
@@ -42,7 +42,7 @@ The vision behind this project is to **demonstrate the capabilities of decentral
 * 💰 **STX Integration:** Add optional STX token transfers with greetings for special occasions.
 
 ## Contract Details
-Deployed contract address: ST26VVBEQPNDC7DJ3Z1NA57GNYBQCMEX7C5C2DXYY.greeting-app
+Deployed contract address: `ST26VVBEQPNDC7DJ3Z1NA57GNYBQCMEX7C5C2DXYY.greeting-app`
 
 ## 🏗️ Project Architecture
 
@@ -65,8 +65,8 @@ greeting-app/
 
 ### 1. Clone project
 ```bash
-git clone <repository-url>
-cd greeting-app
+git clone https://github.com/dinhxuanquyen/Greeting_app.git
+cd Greeting_app
 ```
 
 ### 2. Install dependencies
@@ -228,21 +228,8 @@ This project is released under MIT License.
 
 ## 📞 Contact
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Email**: [your-email@example.com]
-- **GitHub**: [your-github-username]
-- **Discord**: [your-discord-username]
-=======
 - **Email**: [dinhxuanquyen324@gmail.com]
 - **GitHub**: [https://github.com/dinhxuanquyen]
-
->>>>>>> e9459fc5eababf2af0f6e86af11959712610d63c
-=======
-- **Email**: [dinhxuanquyen324@gmail.com]
-- **GitHub**: [https://github.com/dinhxuanquyen]
-
->>>>>>> e9459fc5eababf2af0f6e86af11959712610d63c
 
 ## 🙏 Acknowledgments
 
@@ -253,12 +240,4 @@ This project is released under MIT License.
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Note**: This is a demo project. Do not use for production without thorough testing. 
-=======
-**Note**: This is a demo project. Do not use for production without thorough testing. 
->>>>>>> e9459fc5eababf2af0f6e86af11959712610d63c
-=======
-**Note**: This is a demo project. Do not use for production without thorough testing. 
->>>>>>> e9459fc5eababf2af0f6e86af11959712610d63c
